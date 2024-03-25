@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react"
+import { forwardRef } from "react"
 import Container from "./styled"
 
 interface VStackProps {
@@ -63,5 +63,7 @@ const VStack = forwardRef<HTMLDivElement, VStackProps>(
     )
   }
 )
+
+VStack.displayName = "VStack"
 
 export default VStack
