@@ -11,11 +11,3 @@ export const HoverContainer = styled.div<{ lineColor: string }>`
     border-bottom: 2px solid ${(props) => props.lineColor};
   }
 `
-
-export const BtnContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 80px 0 0 0;
-  cursor: pointer;
-`

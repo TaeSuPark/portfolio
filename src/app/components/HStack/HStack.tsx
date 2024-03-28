@@ -18,6 +18,7 @@ interface HStackProps {
   flexGrow?: number
   onClick?: () => void
   wrap?: boolean
+  style?: React.CSSProperties
 }
 
 const HStack: React.FC<HStackProps> = ({
@@ -37,6 +38,7 @@ const HStack: React.FC<HStackProps> = ({
   flexGrow,
   onClick,
   wrap,
+  style,
 }) => {
   return (
     <Container
@@ -55,6 +57,7 @@ const HStack: React.FC<HStackProps> = ({
       $flexGrow={flexGrow}
       onClick={onClick}
       $wrap={wrap}
+      style={style}
     >
       {children}
     </Container>

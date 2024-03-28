@@ -1,14 +1,12 @@
-import { useState } from "react"
 import HStack from "../HStack/HStack"
-import { skillData } from "@/app/utils/Datas"
-import { SelectedContainer } from "../MacCard/styled"
+
 import { Typography } from "@mui/material"
 import VStack from "../VStack/VStack"
 
-import IcDooray from "/public/skills/ic_dooray.svg"
 import IcTime from "/public/ic_time.svg"
 import IcVerify from "/public/ic_verify.svg"
 import IcVerifing from "/public/ic_verifing.svg"
+import { CardContainer, IconContainer } from "./styled"
 
 interface SkillCardProps {
   skillName: string
@@ -19,15 +17,8 @@ interface SkillCardProps {
 
 const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
   return (
-    <HStack p="8px 16px" gap="16px" justifyContent="center" alignItems="center">
-      <VStack
-        justifyContent="center"
-        alignItems="center"
-        width="80px"
-        height="80px"
-      >
-        {svg}
-      </VStack>
+    <CardContainer>
+      <IconContainer>{svg}</IconContainer>
 
       <VStack width="100%">
         <VStack>
@@ -38,7 +29,7 @@ const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
             <HStack alignItems="center" justifyContent="center" gap="4px">
               <IcTime />
               <Typography variant="subtitle1" color="#DCDCDC">
-                {year}year
+                {`${year}year`}
               </Typography>
             </HStack>
           </HStack>
@@ -52,7 +43,7 @@ const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
           </HStack>
         </VStack>
       </VStack>
-    </HStack>
+    </CardContainer>
   )
 }
 

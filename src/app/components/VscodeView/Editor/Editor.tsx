@@ -106,9 +106,7 @@ const Editor = () => {
             <TextArea />
           </VStack>
         ) : (
-          <VStack p="12px 20px">
-            <Career />
-          </VStack>
+          <Career />
         )}
       </EditorContainer>
     </VStack>
