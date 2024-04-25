@@ -48,7 +48,7 @@ export const SkillContainer = styled.div`
   background-attachment: local, local, scroll, scroll;
 `
 
-export const ButtonContainer = styled.div<{ isSelected: boolean }>`
+export const ButtonContainer = styled.div<{ $isSelected: boolean }>`
   display: flex;
   padding: 6px 16px;
   margin: 8px 0;
@@ -57,8 +57,8 @@ export const ButtonContainer = styled.div<{ isSelected: boolean }>`
   width: max-content;
   height: max-content;
   border-radius: 40px;
-  background-color: ${({ isSelected }) =>
-    isSelected ? "#4e4e4e" : "#2f2f2f;"};
+  background-color: ${({ $isSelected }) =>
+    $isSelected ? "#4e4e4e" : "#2f2f2f;"};
   cursor: pointer;
   transition: 0.5s;
   &:hover {

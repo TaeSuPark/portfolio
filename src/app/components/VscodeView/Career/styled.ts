@@ -13,7 +13,7 @@ export const ContentsContainer = styled.div`
   width: 100%;
   justify-content: center;
   gap: 24px;
-  padding: 48px;
+  padding: 12px 48px;
   background-color: #242424;
 `
 

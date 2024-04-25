@@ -14,7 +14,6 @@ import HStack from "../HStack/HStack"
 
 import IcOpenFolder from "/public/ic_open_folder.svg"
 import IcGitBranch from "/public/ic_git_branch.svg"
-import IcPhone from "/public/ic_phone.svg"
 import { useRouter } from "next/router"
 
 const IntroView = () => {

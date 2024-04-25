@@ -37,7 +37,7 @@ const Skills = () => {
               onClick={() => {
                 setSelected(v)
               }}
-              isSelected={v.title === selected.title}
+              $isSelected={v.title === selected.title}
             >
               <Typography variant="subtitle1">{v.title}</Typography>
             </ButtonContainer>
