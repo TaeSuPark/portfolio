@@ -3,8 +3,11 @@ import styled from "styled-components"
 export const ExtensionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  border-right: 1px solid #2f2f2f;
+  width: 70vw;
+  height: 30vh;
+  margin: 0 -20px;
+  flex-grow: 1;
+  border-top: 1px solid #2f2f2f;
   background-color: #1e1e1e;
 `
 export const SkillContainer = styled.div`
@@ -77,8 +80,4 @@ export const CircleContainer = styled.div`
   height: 30px;
   border-radius: 50%;
   background-color: #616161;
-`
-
-export const Test = styled.div`
-  transition: 0.5s;
 `

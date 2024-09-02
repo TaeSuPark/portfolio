@@ -16,6 +16,7 @@ interface VStackProps {
   justifyContent?: string
   alignItems?: string
   flexGrow?: number
+  isShadow?: boolean
   onClick?: () => void
 }
 
@@ -36,6 +37,7 @@ const VStack = forwardRef<HTMLDivElement, VStackProps>(
       justifyContent,
       alignItems,
       flexGrow,
+      isShadow,
       onClick,
     },
     ref
@@ -55,6 +57,7 @@ const VStack = forwardRef<HTMLDivElement, VStackProps>(
         $justifyContent={justifyContent}
         $alignItems={alignItems}
         $flexGrow={flexGrow}
+        $isShadow={isShadow}
         onClick={onClick}
         ref={ref}
       >

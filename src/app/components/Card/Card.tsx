@@ -1,16 +1,17 @@
-import { Container } from "./styled"
+import VStack from "../VStack/VStack"
+import { CardBottom, Container } from "./styled"
 
 interface CardProps {
   children: React.ReactNode | React.ReactNode[]
-  bg?: string
   onClick?: () => void
 }
 
-const Card: React.FC<CardProps> = ({ children, bg = "#ffffff", onClick }) => {
+const Card: React.FC<CardProps> = ({ children, onClick }) => {
   return (
-    <Container $bg={bg} onClick={onClick}>
-      {children}
-    </Container>
+    <VStack>
+      <Container onClick={onClick}>{children}</Container>
+      <CardBottom $processing={false} />
+    </VStack>
   )
 }
 export default Card

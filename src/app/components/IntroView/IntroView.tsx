@@ -14,7 +14,6 @@ import HStack from "../HStack/HStack"
 
 import IcOpenFolder from "/public/ic_open_folder.svg"
 import IcGitBranch from "/public/ic_git_branch.svg"
-import IcPhone from "/public/ic_phone.svg"
 import { useRouter } from "next/router"
 
 const IntroView = () => {
@@ -97,7 +96,7 @@ const IntroView = () => {
             <Typography variant="h5" color="#CECECE">
               History
             </Typography>
-            <VStack>
+            {/* <VStack>
               <CardContainer>
                 <Typography variant="h6" color="#CECECE">
                   {`2023.10 ~`}
@@ -107,7 +106,7 @@ const IntroView = () => {
                 </Typography>
               </CardContainer>
               <CardBottom processing />
-            </VStack>
+            </VStack> */}
             <VStack>
               <CardContainer>
                 <Typography variant="h6" color="#CECECE">
