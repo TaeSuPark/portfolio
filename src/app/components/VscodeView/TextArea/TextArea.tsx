@@ -17,7 +17,7 @@ import Line15 from "./Lines/Line15"
 
 const TextArea = () => {
   return (
-    <VStack gap="4px" p="0 24px 0px 24px">
+    <VStack gap="4px" p="0 24px 30px 24px">
       <Line1 />
       <HStack>
         <Typography

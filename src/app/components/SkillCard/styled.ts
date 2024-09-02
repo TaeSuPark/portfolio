@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
   gap: 16px;
   justify-content: center;
   align-items: center;
-
+  transition: 0.5s;
   &:hover {
     background-color: #2d2d2d;
     transition: background-color 0.3s;

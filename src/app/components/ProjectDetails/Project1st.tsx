@@ -5,11 +5,12 @@ import VStack from "../VStack/VStack"
 import Img1_1 from "/public/serv/img_1_1.svg"
 import Img1_2 from "/public/serv/img_1_2.svg"
 import Img1_3 from "/public/serv/img_1_3.svg"
+import { Container } from "./styled"
 
 const Project1st = () => {
   return (
     <VStack p="20px 12px" gap="24px">
-      <HStack gap="24px">
+      <Container hasBetween>
         <VStack isShadow>
           <Img1_1 />
         </VStack>
@@ -19,7 +20,7 @@ const Project1st = () => {
         <VStack isShadow>
           <Img1_3 />
         </VStack>
-      </HStack>
+      </Container>
       <Line />
       <VStack gap="24px">
         <VStack gap="16px">

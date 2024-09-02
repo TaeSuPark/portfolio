@@ -8,6 +8,7 @@ import Img4_2 from "/public/serv/img_4_2.svg"
 import Img4_3 from "/public/serv/img_4_3.svg"
 import Img4_4 from "/public/serv/img_4_4.svg"
 import Img4_5 from "/public/serv/img_4_5.svg"
+import { Container } from "./styled"
 
 const Project4th = () => {
   return (
@@ -18,8 +19,8 @@ const Project4th = () => {
             WORKS
           </Typography>
           <VStack gap="24px">
-            <HStack gap="20px">
-              <VStack isShadow>
+            <Container>
+              <VStack>
                 <Img4_1 />
               </VStack>
               <VStack>
@@ -33,9 +34,9 @@ const Project4th = () => {
                   {`추천부동산, 등기변동알림서비스 제휴`}
                 </Typography>
               </VStack>
-            </HStack>
-            <HStack gap="20px">
-              <VStack isShadow>
+            </Container>
+            <Container>
+              <VStack>
                 <Img4_2 />
               </VStack>
               <VStack>
@@ -49,9 +50,9 @@ const Project4th = () => {
                   {`추천부동산, 등기변동알림서비스 제휴(+자산관리 추가 제휴)`}
                 </Typography>
               </VStack>
-            </HStack>
-            <HStack gap="20px">
-              <VStack isShadow>
+            </Container>
+            <Container>
+              <VStack>
                 <Img4_3 />
               </VStack>
               <VStack>
@@ -65,9 +66,9 @@ const Project4th = () => {
                   {`추천부동산, 등기변동알림서비스 제휴`}
                 </Typography>
               </VStack>
-            </HStack>
-            <HStack gap="20px">
-              <VStack isShadow>
+            </Container>
+            <Container>
+              <VStack>
                 <Img4_4 />
               </VStack>
               <VStack>
@@ -81,9 +82,9 @@ const Project4th = () => {
                   {`등기변동알림 서비스 제휴(+기업용 KBSTAR 추가 제휴)`}
                 </Typography>
               </VStack>
-            </HStack>
-            <HStack gap="20px">
-              <VStack isShadow>
+            </Container>
+            <Container>
+              <VStack>
                 <Img4_5 />
               </VStack>
               <VStack>
@@ -97,7 +98,7 @@ const Project4th = () => {
                   {`전세지키미(보증금안전진단) 서비스 제휴`}
                 </Typography>
               </VStack>
-            </HStack>
+            </Container>
           </VStack>
         </VStack>
       </VStack>

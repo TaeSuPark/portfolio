@@ -7,11 +7,12 @@ import Img2_1 from "/public/serv/img_2_1.svg"
 import Img2_2 from "/public/serv/img_2_2.svg"
 import Img2_3 from "/public/serv/img_2_3.svg"
 import Img2_4 from "/public/serv/img_2_4.svg"
+import { Container } from "./styled"
 
 const Project2nd = () => {
   return (
     <VStack p="20px 12px" gap="24px">
-      <HStack gap="24px" justifyContent="space-between">
+     <Container hasBetween>
         <VStack isShadow>
           <Img2_1 />
         </VStack>
@@ -24,7 +25,7 @@ const Project2nd = () => {
         <VStack isShadow>
           <Img2_4 />
         </VStack>
-      </HStack>
+      </Container>
       <Line />
       <VStack gap="24px">
         <VStack gap="16px">
