@@ -96,7 +96,7 @@ const IntroView = () => {
             <Typography variant="h5" color="#CECECE">
               History
             </Typography>
-            <VStack>
+            {/* <VStack>
               <CardContainer>
                 <Typography variant="h6" color="#CECECE">
                   {`2023.10 ~`}
@@ -106,7 +106,7 @@ const IntroView = () => {
                 </Typography>
               </CardContainer>
               <CardBottom processing />
-            </VStack>
+            </VStack> */}
             <VStack>
               <CardContainer>
                 <Typography variant="h6" color="#CECECE">

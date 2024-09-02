@@ -15,6 +15,7 @@ interface Props {
 }
 
 const ProjectCard = ({
+  svg: FirstSvg,
   title,
   period,
   member,
@@ -23,12 +24,12 @@ const ProjectCard = ({
   onDetail,
 }: Props) => {
   return (
-    <Card onClick={onClick}>
+    <Card onClick={onDetail}>
       <HStack gap="24px" minWidth="55vw">
-        <VStack minWidth="300px" height="200px" bg="#123123">
-          <></>
-        </VStack>
-        <VStack justifyContent="space-between" width="100%">
+        {/* <VStack minWidth="300px" height="200px" justifyContent="center">
+          {FirstSvg ? <FirstSvg /> : <></>}
+        </VStack> */}
+        <VStack justifyContent="space-between" width="100%" gap='24px'>
           <VStack gap="12px">
             <Typography variant="h6" color="#DCDCDC">
               {title}
@@ -64,6 +65,7 @@ const ProjectCard = ({
             variant="subtitle2"
             color="#DCDCDC"
             textAlign={"right"}
+            style={{ cursor: "pointer" }}
             onClick={(e: any) => {
               e.stopPropagation()
               onDetail()

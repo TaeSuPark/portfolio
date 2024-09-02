@@ -14,6 +14,7 @@ interface VStackStyledProps {
   $justifyContent?: string
   $alignItems?: string
   $flexGrow?: number
+  $isShadow?: boolean
 }
 
 const Container = styled.div<VStackStyledProps>`
@@ -32,5 +33,8 @@ const Container = styled.div<VStackStyledProps>`
   justify-content: ${(props) => props.$justifyContent};
   align-items: ${(props) => props.$alignItems};
   flex-grow: ${(props) => props.$flexGrow};
+  box-shadow: ${(props) =>
+    props.$isShadow ? "0 10px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.13)" : "none"};
+  
 `
 export default Container
