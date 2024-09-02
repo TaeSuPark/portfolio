@@ -58,7 +58,7 @@ const Editor = () => {
                 color="#8DCE8D"
                 style={{ fontWeight: 400 }}
               >
-                경력사항.txt
+                Work.tsx
               </Typography>
               <Typography
                 variant="h6"
