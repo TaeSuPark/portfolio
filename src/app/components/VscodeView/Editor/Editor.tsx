@@ -9,6 +9,7 @@ import IcLabtop from "/public/ic_labtop.svg"
 import IcComponent from "/public/ic_component.svg"
 import TextArea from "../TextArea/TextArea"
 import Career from "../Career/Career"
+import Terminal from "../Terminal/Terminal"
 
 const Editor = () => {
   const [selectedTab, setSelectedTab] = useState<{ page: number }>({ page: 0 })
@@ -104,6 +105,8 @@ const Editor = () => {
             </HStack>
 
             <TextArea />
+{/* 
+            <Terminal /> */}
           </VStack>
         ) : (
           <Career />

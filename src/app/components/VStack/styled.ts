@@ -34,7 +34,8 @@ const Container = styled.div<VStackStyledProps>`
   align-items: ${(props) => props.$alignItems};
   flex-grow: ${(props) => props.$flexGrow};
   box-shadow: ${(props) =>
-    props.$isShadow ? "0 10px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.13)" : "none"};
-  
+    props.$isShadow
+      ? "0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.23)"
+      : "none"};
 `
 export default Container

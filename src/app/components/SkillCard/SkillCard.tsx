@@ -28,9 +28,9 @@ const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
             </Typography>
             <HStack alignItems="center" justifyContent="center" gap="4px">
               <IcTime />
-              <Typography variant="subtitle1" color="#DCDCDC">
+              {/* <Typography variant="subtitle1" color="#DCDCDC">
                 {`${year}year`}
-              </Typography>
+              </Typography> */}
             </HStack>
           </HStack>
 
