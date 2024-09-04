@@ -7,6 +7,8 @@ import {
   CardContainer,
   CardBottom,
   LinkContainer,
+  VHContainer,
+  MediaVStack,
 } from "./styled"
 
 import VStack from "../VStack/VStack"
@@ -45,9 +47,9 @@ const IntroView = () => {
         </HStack>
       </TabContainer>
 
-      <VStack justifyContent="center" alignItems="center" height="90vh">
-        <HStack width="100%">
-          <VStack width="50%" gap="48px" p="120px">
+      <VStack height="90vh" p="36px">
+        <VHContainer>
+          <MediaVStack gap="48px">
             <VStack gap="24px">
               <Typography variant="h3" color="#CECECE">
                 Park Taesu Portfolio
@@ -80,33 +82,12 @@ const IntroView = () => {
                   Go to Git Repository...
                 </Typography>
               </LinkContainer>
-              {/* <LinkContainer>
-                <IcPhone />
-                <Typography
-                  variant="h6"
-                  color="#4277D0"
-                  style={{ fontWeight: 400 }}
-                >
-                  Connact to...
-                </Typography>
-              </LinkContainer> */}
             </VStack>
-          </VStack>
-          <VStack width="50%" gap="20px" p="120px">
+          </MediaVStack>
+          <MediaVStack gap="20px">
             <Typography variant="h5" color="#CECECE">
               History
             </Typography>
-            {/* <VStack>
-              <CardContainer>
-                <Typography variant="h6" color="#CECECE">
-                  {`2023.10 ~`}
-                </Typography>
-                <Typography variant="subtitle1" color="#CECECE">
-                  {`Study & Find Job`}
-                </Typography>
-              </CardContainer>
-              <CardBottom processing />
-            </VStack> */}
             <VStack>
               <CardContainer>
                 <Typography variant="h6" color="#CECECE">
@@ -135,8 +116,8 @@ const IntroView = () => {
               </CardContainer>
               <CardBottom processing={false} />
             </VStack>
-          </VStack>
-        </HStack>
+          </MediaVStack>
+        </VHContainer>
       </VStack>
     </VStack>
   )

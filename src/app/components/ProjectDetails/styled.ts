@@ -9,3 +9,10 @@ export const Container = styled.div<{ hasBetween?: boolean }>`
   column-gap: 24px;
   overflow-x: auto;
 `
+
+export const Test = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+`

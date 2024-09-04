@@ -7,7 +7,6 @@ export const LinkContainer = styled.div`
   width: max-content;
   align-items: center;
   cursor: pointer;
-
   &:hover > * {
     color: #5388e1;
   }
@@ -17,7 +16,6 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 12px 24px;
-  width: 90%;
   border-radius: 12px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -28,7 +26,6 @@ export const CardBottom = styled.div<{ processing: boolean }>`
   flex-direction: column;
   height: 5px;
   padding: 0 24px;
-  width: 90%;
   border-radius: 12px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -41,7 +38,6 @@ export const CardBottom = styled.div<{ processing: boolean }>`
 export const TabContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   border: 1px solid #2f2f2f;
   background-color: #1e1e1e;
   border-left: none;
@@ -76,4 +72,30 @@ export const EmptyTab = styled.div`
   background-color: #1e1e1e;
   border-bottom: 1px solid #2f2f2f;
   flex-grow: 1;
+`
+
+export const VHContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: #242424;
+
+  @media (min-width: 768px) {
+    flex-grow: 1;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 56px;
+  }
+`
+
+export const MediaVStack = styled.div<{ gap?: string }>`
+  display: flex;
+  flex-direction: column;
+  row-gap: ${(props) => props.gap};
+  flex-grow: 1;
+
+  @media (min-width: 768px) {
+    padding: 0 56px;
+  }
 `
