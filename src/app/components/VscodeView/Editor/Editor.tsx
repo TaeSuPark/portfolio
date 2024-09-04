@@ -1,7 +1,14 @@
 import { Typography } from "@mui/material"
 import HStack from "../../HStack/HStack"
 import VStack from "../../VStack/VStack"
-import { EditorContainer, EmptyTab, Tab, TabContainer } from "./styled"
+import {
+  EditorContainer,
+  EmptyTab,
+  Tab,
+  TabContainer,
+  OverContainer,
+  PcAbout,
+} from "./styled"
 import { useState } from "react"
 import IcRight from "/public/ic_right.svg"
 import IcReactSmall from "/public/ic_react_small.svg"
@@ -10,6 +17,8 @@ import IcComponent from "/public/ic_component.svg"
 import TextArea from "../TextArea/TextArea"
 import Career from "../Career/Career"
 import Terminal from "../Terminal/Terminal"
+import Card from "../../Card/Card"
+import MobileCard from "./MobileCard"
 
 const Editor = () => {
   const [selectedTab, setSelectedTab] = useState<{ page: number }>({ page: 0 })
@@ -19,7 +28,7 @@ const Editor = () => {
   }
 
   return (
-    <VStack>
+    <OverContainer>
       <TabContainer>
         <HStack>
           <Tab
@@ -73,46 +82,50 @@ const Editor = () => {
           <EmptyTab />
         </HStack>
       </TabContainer>
+
       <EditorContainer>
         {selectedTab.page === 0 ? (
-          <VStack p="12px 20px">
-            <HStack gap="10px">
-              <Typography variant="body1" color="#EBEBEB">
-                src
-              </Typography>
-              <IcRight />
-              <Typography variant="body1" color="#EBEBEB">
-                app
-              </Typography>
-              <IcRight />
-              <Typography variant="body1" color="#EBEBEB">
-                components
-              </Typography>
-              <IcRight />
-              <HStack gap="6px">
-                <IcReactSmall />
+          <>
+            <MobileCard />
+            <PcAbout>
+              <HStack gap="10px">
                 <Typography variant="body1" color="#EBEBEB">
-                  About.tsx
+                  src
                 </Typography>
-              </HStack>
-              <IcRight />
-              <HStack gap="6px">
-                <IcComponent />
+                <IcRight />
                 <Typography variant="body1" color="#EBEBEB">
-                  About
+                  app
                 </Typography>
+                <IcRight />
+                <Typography variant="body1" color="#EBEBEB">
+                  components
+                </Typography>
+                <IcRight />
+                <HStack gap="6px">
+                  <IcReactSmall />
+                  <Typography variant="body1" color="#EBEBEB">
+                    About.tsx
+                  </Typography>
+                </HStack>
+                <IcRight />
+                <HStack gap="6px">
+                  <IcComponent />
+                  <Typography variant="body1" color="#EBEBEB">
+                    About
+                  </Typography>
+                </HStack>
               </HStack>
-            </HStack>
 
-            <TextArea />
-{/* 
+              <TextArea />
+              {/* 
             <Terminal /> */}
-          </VStack>
+            </PcAbout>
+          </>
         ) : (
           <Career />
         )}
       </EditorContainer>
-    </VStack>
+    </OverContainer>
   )
 }
 

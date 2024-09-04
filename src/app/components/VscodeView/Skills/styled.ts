@@ -6,6 +6,10 @@ export const ExtensionContainer = styled.div`
   width: 30vw;
   border-right: 1px solid #2f2f2f;
   background-color: #1e1e1e;
+
+  @media (max-width: 768px) {
+    display: none; // #######
+  }
 `
 export const SkillContainer = styled.div`
   display: flex;
