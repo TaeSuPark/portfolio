@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ children, onClick }) => {
   return (
-    <VStack>
+    <VStack flexGrow={1}>
       <Container onClick={onClick}>{children}</Container>
       <CardBottom $processing={false} />
     </VStack>
