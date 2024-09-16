@@ -1,7 +1,7 @@
-import Contents from "@/app/pages/Contents"
+import EditorView from "@src/components/views/EditorView"
 
 const EditorPage = () => {
-  return <Contents />
+  return <EditorView />
 }
 
 export default EditorPage
