@@ -1,10 +1,12 @@
 import mainTheme from "@src/styles/mainTheme"
 import styled from "styled-components"
+import HStack from "../HStack/HStack"
 
-export const HTabContainer = styled.div<{ selected: boolean }>`
-  padding: 12px 16px;
+export const HTabContainer = styled(HStack)<{ selected: boolean }>`
+  padding: 12px 12px;
   border-right: 1px solid ${mainTheme.colors.thirdary};
-
+  min-width: max-content;
+  height: max-content;
   cursor: pointer;
   background-color: ${({ selected }) =>
     selected ? mainTheme.colors.primary : mainTheme.colors.secondary};
@@ -16,6 +18,10 @@ export const HTabContainer = styled.div<{ selected: boolean }>`
     props.selected
       ? `1px solid ${mainTheme.colors.primary}`
       : `1px solid ${mainTheme.colors.thirdary}`};
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primary};
+    transition: background-color 0.1s;
+  }
 `
 
 export const VTabContainer = styled.div<{ selected: boolean }>`

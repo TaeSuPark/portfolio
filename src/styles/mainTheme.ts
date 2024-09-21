@@ -160,7 +160,7 @@ const space = {
 
 const colors = {
   primary: "#252525", // 배경
-  secondary: "#1E1E1E", // 진한배경
+  secondary: "#1A1A1A", // 진한배경
   thirdary: "#2F2F2F", // 섹션 테두리
   fourthary: "#2A2A2A",
   "blue-main": "#4477D0",
