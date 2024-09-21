@@ -21,7 +21,7 @@ const SvgTypo = ({
   onClick,
 }: SvgTypoProps) => {
   return (
-    <SvgContainer gap={4} onClick={onClick} p={p}>
+    <SvgContainer gap={8} onClick={onClick} p={p}>
       {svg}
       <Typography variant={variant} color={color}>
         {value}

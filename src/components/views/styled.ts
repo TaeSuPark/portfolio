@@ -10,13 +10,6 @@ export const LinkContainer = styled(HStack)`
   }
 `
 
-export const FileSysContainer = styled(VStack)`
-  width: 20vw;
-  padding: 12px 0px;
-  background-color: ${mainTheme.colors.secondary};
-  border-right: 1px solid ${mainTheme.colors.thirdary};
-`
-
 export const VHContainer = styled.div`
   display: flex;
   flex-direction: row;
