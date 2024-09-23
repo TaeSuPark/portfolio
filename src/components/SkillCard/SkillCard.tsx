@@ -26,7 +26,7 @@ const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
             <Typography variant="h6" color="#DCDCDC">
               {skillName}
             </Typography>
-            <HStack alignItems="center" justifyContent="center" gap="4px">
+            <HStack alignItems="center" justifyContent="center" gap={4}>
               <IcTime />
               {/* <Typography variant="subtitle1" color="#DCDCDC">
                 {`${year}year`}
@@ -34,7 +34,7 @@ const SkillCard = ({ skillName, year, description, svg }: SkillCardProps) => {
             </HStack>
           </HStack>
 
-          <HStack alignItems="center" gap="4px">
+          <HStack alignItems="center" gap={4}>
             {description === "Verified" ? <IcVerify /> : <IcVerifing />}
 
             <Typography variant="subtitle1" color="#DCDCDC">

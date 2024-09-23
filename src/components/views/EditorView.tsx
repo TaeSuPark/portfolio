@@ -13,27 +13,67 @@ import IcProject from "@assets/ic_project.svg"
 import FileSystem from "../FileSystem/FileSystem"
 import Typography from "../Typography/Typograpy"
 import Contents from "../Contents/Contents"
+import { useState } from "react"
+import SkillExtensions from "../SkillExtensions/SkillExtensions"
+import Connect from "../Connect/Connect"
 
 const EditorView = () => {
+  const [menu, setMenu] = useState<number>(0)
   return (
     <VStack bg={"primary"} height="100vh">
       <HStack flexGrow={1}>
         {/** Menu Tab */}
         <VStack width="max-content">
-          <Tab onClick={() => {}} direction="vertical" selected={true}>
-            <IcMenuFiles stroke={mainTheme.colors["white-light"]} />
+          <Tab
+            onClick={() => {
+              setMenu(0)
+            }}
+            direction="vertical"
+            selected={menu === 0}
+          >
+            <IcMenuFiles
+              stroke={
+                mainTheme.colors[menu === 0 ? "white-light" : "grey-hide"]
+              }
+            />
           </Tab>
-          <Tab onClick={() => {}} direction="vertical" selected={!true}>
-            <IcMenuBlock stroke={mainTheme.colors["grey-hide"]} />
+          <Tab
+            onClick={() => {
+              setMenu(1)
+            }}
+            direction="vertical"
+            selected={menu === 1}
+          >
+            <IcMenuBlock
+              stroke={
+                mainTheme.colors[menu === 1 ? "white-light" : "grey-hide"]
+              }
+            />
           </Tab>
-          <Tab onClick={() => {}} direction="vertical" selected={!true}>
-            <IcMenuMsg stroke={mainTheme.colors["grey-hide"]} />
+          <Tab
+            onClick={() => {
+              setMenu(2)
+            }}
+            direction="vertical"
+            selected={menu === 2}
+          >
+            <IcMenuMsg
+              stroke={
+                mainTheme.colors[menu === 2 ? "white-light" : "grey-hide"]
+              }
+            />
           </Tab>
           <EmptyTab direction="vertical" />
         </VStack>
 
         {/** File System */}
-        <FileSystem />
+        {menu === 0 ? (
+          <FileSystem />
+        ) : menu === 1 ? (
+          <SkillExtensions />
+        ) : (
+          <Connect />
+        )}
         <Contents />
       </HStack>
     </VStack>

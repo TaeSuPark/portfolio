@@ -77,6 +77,7 @@ const ScrollTab = () => {
     >
       {tab.map((t, idx) => (
         <Tab
+          key={idx}
           onClick={() => {
             setActive(t.value)
           }}

@@ -1,49 +1,49 @@
 //frontend
-import IcHtml from "@public/skills/ic_html.svg"
-import IcCss from "@public/skills/ic_css.svg"
-import IcJs from "@public/skills/ic_javascript.svg"
-import IcTs from "@public/skills/ic_typescript.svg"
-import IcReact from "@public/skills/ic_react.svg"
-import IcNext from "@public/skills/ic_nextjs.svg"
-import IcReactQuery from "@public/skills/ic_react_query.svg"
-import IcRedux from "@public/skills/ic_redux.svg"
-import IcRecoil from "@public/skills/ic_recoil.svg"
-import IcHookForm from "@public/skills/ic_react_hook_form.svg"
-import IcStyled from "@public/skills/ic_styled_components.svg"
+import IcHtml from "@assets/skills/ic_html.svg"
+import IcCss from "@assets/skills/ic_css.svg"
+import IcJs from "@assets/skills/ic_javascript.svg"
+import IcTs from "@assets/skills/ic_typescript.svg"
+import IcReact from "@assets/skills/ic_react.svg"
+import IcNext from "@assets/skills/ic_nextjs.svg"
+import IcReactQuery from "@assets/skills/ic_react_query.svg"
+import IcRedux from "@assets/skills/ic_redux.svg"
+import IcRecoil from "@assets/skills/ic_recoil.svg"
+import IcHookForm from "@assets/skills/ic_react_hook_form.svg"
+import IcStyled from "@assets/skills/ic_styled_components.svg"
 
 //backend
-import IcSpring from "@public/skills/ic_spring.svg"
-import IcSpringBoot from "@public/skills/ic_spring_boot.svg"
-import IcMybatis from "@public/skills/ic_mybatis.svg"
-import IcGradle from "@public/skills/ic_gradle.svg"
-import IcPostgresql from "@public/skills/ic_postgresql.svg"
-import IcMssql from "@public/skills/ic_mssql.svg"
-import IcMysql from "@public/skills/ic_mysql.svg"
-import IcPostman from "@public/skills/ic_postman.svg"
+import IcSpring from "@assets/skills/ic_spring.svg"
+import IcSpringBoot from "@assets/skills/ic_spring_boot.svg"
+import IcMybatis from "@assets/skills/ic_mybatis.svg"
+import IcGradle from "@assets/skills/ic_gradle.svg"
+import IcPostgresql from "@assets/skills/ic_postgresql.svg"
+import IcMssql from "@assets/skills/ic_mssql.svg"
+import IcMysql from "@assets/skills/ic_mysql.svg"
+import IcPostman from "@assets/skills/ic_postman.svg"
 
 //deployment
-import IcAws from "@public/skills/ic_aws.svg"
-import IcNcp from "@public/skills/ic_ncp.svg"
-import IcRaspberryPi from "@public/skills/ic_raspberrypi.svg"
-import IcCentos from "@public/skills/ic_centos.svg"
-import IcNginx from "@public/skills/ic_nginx.svg"
-import IcDocker from "@public/skills/ic_docker.svg"
-import IcJenkins from "@public/skills/ic_jenkins.svg"
+import IcAws from "@assets/skills/ic_aws.svg"
+import IcNcp from "@assets/skills/ic_ncp.svg"
+import IcRaspberryPi from "@assets/skills/ic_raspberrypi.svg"
+import IcCentos from "@assets/skills/ic_centos.svg"
+import IcNginx from "@assets/skills/ic_nginx.svg"
+import IcDocker from "@assets/skills/ic_docker.svg"
+import IcJenkins from "@assets/skills/ic_jenkins.svg"
 
 //version-control
-import IcGit from "@public/skills/ic_git.svg"
-import IcGithub from "@public/skills/ic_github.svg"
-import IcGitlab from "@public/skills/ic_gitlab.svg"
-import IcSourcetree from "@public/skills/ic_sourcetree.svg"
+import IcGit from "@assets/skills/ic_git.svg"
+import IcGithub from "@assets/skills/ic_github.svg"
+import IcGitlab from "@assets/skills/ic_gitlab.svg"
+import IcSourcetree from "@assets/skills/ic_sourcetree.svg"
 
 //communication
-import IcJira from "@public/skills/ic_jira.svg"
-import IcDooray from "@public/skills/ic_dooray.svg"
-import IcFigma from "@public/skills/ic_figma.svg"
+import IcJira from "@assets/skills/ic_jira.svg"
+import IcDooray from "@assets/skills/ic_dooray.svg"
+import IcFigma from "@assets/skills/ic_figma.svg"
 
 export const skillData = [
   {
-    title: "Front-End",
+    title: "FrontEnd",
     data: [
       {
         skillName: "JavaScript",
@@ -114,7 +114,7 @@ export const skillData = [
     ],
   },
   {
-    title: "Back-End",
+    title: "BackEnd",
     data: [
       {
         skillName: "Spring Boot",
@@ -167,7 +167,7 @@ export const skillData = [
     ],
   },
   {
-    title: "Deployment",
+    title: "Deploy",
 
     data: [
       {
@@ -215,7 +215,7 @@ export const skillData = [
     ],
   },
   {
-    title: "Version-Control",
+    title: "VersionControl",
 
     data: [
       {

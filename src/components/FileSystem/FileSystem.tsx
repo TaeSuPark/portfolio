@@ -24,8 +24,8 @@ const FileSystem = ({}: FileSystemProps) => {
 
   const [openFile, setOpenFile] = useState<string[]>([
     "total",
-    "src",
-    "components",
+    // "src",
+    // "components",
   ])
 
   const handleTab = (fileName: string, key: string) => {
