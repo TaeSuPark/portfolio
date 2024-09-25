@@ -1,4 +1,4 @@
-import { LinkContainer } from "./styled"
+import { LinkContainer, VHContainer, MediaVStack } from "./styled"
 
 import VStack from "@components/VStack/VStack"
 import HStack from "@components/HStack/HStack"
@@ -38,8 +38,8 @@ const IntroView = () => {
       </HStack>
 
       <VStack alignItems="center" justifyContent="center" flexGrow={1}>
-        <HStack>
-          <VStack width="50vw" alignItems="center" justifyContent="center">
+        <VHContainer>
+          <MediaVStack>
             <VStack gap={48}>
               <VStack gap={24}>
                 <Typography variant="h2" color="white-light">
@@ -75,8 +75,8 @@ const IntroView = () => {
                 </LinkContainer>
               </VStack>
             </VStack>
-          </VStack>
-          <VStack width="50vw" alignItems="center" justifyContent="center">
+          </MediaVStack>
+          <MediaVStack>
             <VStack gap={20} minWidth="30vw">
               <Typography variant="title-r" color="white-light">
                 History
@@ -113,8 +113,8 @@ const IntroView = () => {
                 </VStack>
               </Card>
             </VStack>
-          </VStack>
-        </HStack>
+          </MediaVStack>
+        </VHContainer>
       </VStack>
     </VStack>
   )
