@@ -8,6 +8,8 @@ interface TypographyProps {
   $textAlign: string
   $underLine?: boolean
   $italic?: boolean
+  ellipsis?: boolean
+  noWrap?: boolean
   pl?: number
 }
 
@@ -19,4 +21,6 @@ export const Span = styled.span<TypographyProps>`
   text-decoration: ${({ $underLine }) => ($underLine ? "underline" : "none")};
   font-style: ${({ $italic }) => ($italic ? "italic" : "normal")};
   padding-left: ${({ pl }) => pl}px;
+  white-space: ${({ noWrap }) => (noWrap ? "nowrap" : "normal")};
+  overflow: ${({ ellipsis }) => (ellipsis ? "hidden" : "visible")};
 `
