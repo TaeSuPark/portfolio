@@ -11,22 +11,17 @@ import IcReactSmall from "@assets/ic_react_small.svg"
 import IcProject from "@assets/ic_project.svg"
 import SvgTypo from "../SvgTypo/SvgTypo"
 import { useRecoilState } from "recoil"
-import { activeFileState, tabState } from "@src/recoil/dataAtom"
+import { activeFileState, filePathState, tabState } from "@src/recoil/dataAtom"
 
 interface FileSystemProps {}
 
 const FileSystem = ({}: FileSystemProps) => {
   const [tab, setTab] =
     useRecoilState<{ label: string; value: string; svg: any }[]>(tabState)
+  const [openFile, setOpenFile] = useRecoilState<string[]>(filePathState)
   const [active, setActive] = useRecoilState<string | undefined>(
     activeFileState
   )
-
-  const [openFile, setOpenFile] = useState<string[]>([
-    "total",
-    // "src",
-    // "components",
-  ])
 
   const handleTab = (fileName: string, key: string) => {
     // if (tab.find((file) => file.value === key)) {

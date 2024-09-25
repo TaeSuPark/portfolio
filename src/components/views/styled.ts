@@ -13,7 +13,6 @@ export const LinkContainer = styled(HStack)`
 export const VHContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #242424;
 
   @media (min-width: 768px) {
     flex-grow: 1;
@@ -25,13 +24,14 @@ export const VHContainer = styled.div`
   }
 `
 
-export const MediaVStack = styled.div<{ gap?: string }>`
-  display: flex;
-  flex-direction: column;
-  row-gap: ${(props) => props.gap};
-  flex-grow: 1;
-
+export const MediaVStack = styled(VStack)`
   @media (min-width: 768px) {
-    padding: 0 56px;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px;
   }
 `

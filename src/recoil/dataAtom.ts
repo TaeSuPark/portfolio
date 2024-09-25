@@ -9,3 +9,8 @@ export const activeFileState = atom<string | undefined>({
   key: "activeFileState",
   default: undefined,
 })
+
+export const filePathState = atom<string[]>({
+  key: "filePathState",
+  default: ["total"],
+})

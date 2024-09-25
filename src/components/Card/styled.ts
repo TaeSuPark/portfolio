@@ -7,7 +7,7 @@ export const CardContainer = styled(VStack)`
   border-radius: 12px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  min-width: 300px;
+  min-width: 200px;
   background-color: ${mainTheme.colors.thirdary};
   &:hover {
     background-color: ${mainTheme.colors.fourthary};
@@ -23,7 +23,7 @@ export const CardBottom = styled.div<{ $processing: boolean }>`
   border-radius: 12px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  min-width: 300px;
+  min-width: 200px;
   ${(props) =>
     props.$processing
       ? `background-image: linear-gradient(to right, ${mainTheme.colors["blue-main"]} 50%, #3f3f3f 50%);`

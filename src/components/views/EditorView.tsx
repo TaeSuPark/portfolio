@@ -8,17 +8,29 @@ import IcMenuFiles from "@assets/ic_menu_files.svg"
 import IcMenuBlock from "@assets/ic_menu_block.svg"
 import IcMenuMsg from "@assets/ic_menu_msg.svg"
 
-import IcProject from "@assets/ic_project.svg"
-
 import FileSystem from "../FileSystem/FileSystem"
-import Typography from "../Typography/Typograpy"
 import Contents from "../Contents/Contents"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import SkillExtensions from "../SkillExtensions/SkillExtensions"
 import Connect from "../Connect/Connect"
 
 const EditorView = () => {
   const [menu, setMenu] = useState<number>(0)
+
+  const handleMenuClick = (index: number) => {
+    if (menu === index) {
+      setMenu(-1)
+      return
+    }
+    setMenu(index)
+  }
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.innerWidth > 768 ? setMenu(0) : setMenu(-1)
+    }
+  }, [])
+
   return (
     <VStack bg={"primary"} height="100vh">
       <HStack flexGrow={1}>
@@ -26,7 +38,7 @@ const EditorView = () => {
         <VStack width="max-content">
           <Tab
             onClick={() => {
-              setMenu(0)
+              handleMenuClick(0)
             }}
             direction="vertical"
             selected={menu === 0}
@@ -39,7 +51,7 @@ const EditorView = () => {
           </Tab>
           <Tab
             onClick={() => {
-              setMenu(1)
+              handleMenuClick(1)
             }}
             direction="vertical"
             selected={menu === 1}
@@ -52,7 +64,7 @@ const EditorView = () => {
           </Tab>
           <Tab
             onClick={() => {
-              setMenu(2)
+              handleMenuClick(2)
             }}
             direction="vertical"
             selected={menu === 2}
@@ -71,8 +83,10 @@ const EditorView = () => {
           <FileSystem />
         ) : menu === 1 ? (
           <SkillExtensions />
-        ) : (
+        ) : menu === 2 ? (
           <Connect />
+        ) : (
+          <></>
         )}
         <Contents />
       </HStack>
