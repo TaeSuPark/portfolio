@@ -62,7 +62,7 @@ const EditorView = () => {
               }
             />
           </Tab>
-          <Tab
+          {/* <Tab
             onClick={() => {
               handleMenuClick(2)
             }}
@@ -74,7 +74,7 @@ const EditorView = () => {
                 mainTheme.colors[menu === 2 ? "white-light" : "grey-hide"]
               }
             />
-          </Tab>
+          </Tab> */}
           <EmptyTab direction="vertical" />
         </VStack>
 

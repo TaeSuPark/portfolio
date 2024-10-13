@@ -41,6 +41,24 @@ import IcJira from "@assets/skills/ic_jira.svg"
 import IcDooray from "@assets/skills/ic_dooray.svg"
 import IcFigma from "@assets/skills/ic_figma.svg"
 
+// Project01 image
+import Img1_1 from "@assets/serv/img_1_1.svg"
+import Img1_2 from "@assets/serv/img_1_2.svg"
+import Img1_3 from "@assets/serv/img_1_3.svg"
+
+// Project02 image
+import Img2_1 from "@assets/serv/img_2_1.svg"
+import Img2_2 from "@assets/serv/img_2_2.svg"
+import Img2_3 from "@assets/serv/img_2_3.svg"
+import Img2_4 from "@assets/serv/img_2_4.svg"
+
+// Project03 image
+import Img3_1 from "@assets/serv/img_3_1.svg"
+import Img3_2 from "@assets/serv/img_3_2.svg"
+import Img3_3 from "@assets/serv/img_3_3.svg"
+import Img3_4 from "@assets/serv/img_3_4.svg"
+import Img3_5 from "@assets/serv/img_3_5.svg"
+
 export const skillData = [
   {
     title: "FrontEnd",
@@ -269,3 +287,95 @@ export const skillData = [
     ],
   },
 ]
+
+export const projectData = {
+  Project01: {
+    skills: {
+      cnt: 4,
+      datas: [
+        "FRONT-END : React, TypeScript, React Query, Redux, Styled Components",
+        "BACK-END : Spring Boot, Mybatis, Postgresql, MS-SQL",
+        "DEPLOYMENT : AWS, Naver Cloud Platform, Nginx, CentOS",
+        "COMMUNICATION : Git, GitLab , Figma, Postman",
+      ],
+    },
+    works: {
+      cnt: 8,
+      datas: [
+        "- Figma를 통한 디자인 일부 업무",
+        "- 서비스 데이터베이스 설계 및 구성",
+        "- 등기 대장 열람 문서 제공 및 요약 정보 제공 기능 개발",
+        "- 전세 간편 안전진단, 시세 계산기 기능 개발",
+        "- 가격변동, 상가변동, 시세, 실거래 변동 알림 스케줄러 및 로직 개발",
+        "- 변동 내역 카드 기능 개발, 상세 정보 제공 기능 개발",
+        "- 변동 내역 푸시알림 정책 및 기능 개발",
+        "- 이 외 서비스 관련 백엔드, 프론트엔드 일괄 개발",
+      ],
+    },
+    imageList: [<Img1_1 key={0} />, <Img1_2 key={1} />, <Img1_3 key={2} />],
+  },
+  Project02: {
+    skills: {
+      cnt: 4,
+      datas: [
+        "FRONT-END : React, Next.js, TypeScript, React Query, Redux, Recoil, Monorepo, yarn berry, Styled Components",
+        "BACK-END : Spring Boot, Mybatis, Postgresql, MS-SQL",
+        "DEPLOYMENT : Naver Cloud Platform, Nginx, CentOS, Docker, Jenkins",
+        "COMMUNICATION : Git, GitLab , Figma, Postman",
+      ],
+    },
+    works: {
+      cnt: 10,
+      datas: [
+        "- 서비스 기획 참여",
+        "- 서비스 데이터베이스(Postgresql) 일괄 설계 및 구성",
+        "- React 기반 프론트엔드 프레임워크 구축",
+        "- 전달받은 디자인 기반 공통 컴포넌트 개발",
+        "- 회원 관련 로직, 화면 일괄 개발(가입, 그룹, 탈퇴 등)",
+        "- 포인트 정책, PG 결제 연동 및 쿠폰 시스템, 결제 관련 화면 일괄 개발",
+        "- 공적장부(등기, 대장) 열람이력, 포인트 이용 내역 화면 일괄 개발",
+        "- 관리자 기능 및 그룹 관리 기능, 화면 일괄 개발",
+        "- 클라우드 바우처 대응 화면 및 기능 개발",
+        "- Naver Cloud Platform을 통한 서비스 배포",
+      ],
+    },
+    imageList: [
+      <Img2_1 key={0} />,
+      <Img2_2 key={1} />,
+      <Img2_3 key={2} />,
+      <Img2_4 key={3} />,
+    ],
+  },
+  Project03: {
+    skills: {
+      cnt: 4,
+      datas: [
+        "FRONT-END : React, Next.js, TypeScript, React Query, Redux, Recoil, Monorepo, yarn berry, Styled Components",
+        "BACK-END : Spring Boot, Mybatis, Postgresql, MS-SQL",
+        "DEPLOYMENT : Naver Cloud Platform, Nginx, CentOS, Docker, Jenkins",
+        "COMMUNICATION : Git, GitLab , Figma, Postman",
+      ],
+    },
+    works: {
+      cnt: 9,
+      datas: [
+        "- 개발 리드, 서비스 기획 참여",
+        "- Figma를 통한 디자인 일부 협업",
+        "- 서비스 데이터베이스 설계 및 구성",
+        "- 주소 등록 및 검색 기능 개발, 메인 개발",
+        "- 보증금 안전진단 로직 및 화면 개발",
+        "- 전세 계산기, 시세, 실거래, 매물, 관리비, 등기 대장 열람 및 정보 확인 기능 개발",
+        "- 계약서 안전진단 기능 및 화면 일부 개발",
+        "- 계약서 OCR 데이터에 따른 안전진단 화면, 확정일자, 전입신고 기능 개발",
+        "- 계약서 등록 기능 및 화면 개발",
+      ],
+    },
+    imageList: [
+      <Img3_1 key={0} />,
+      <Img3_2 key={1} />,
+      <Img3_3 key={2} />,
+      <Img3_4 key={3} />,
+      <Img3_5 key={4} />,
+    ],
+  },
+}

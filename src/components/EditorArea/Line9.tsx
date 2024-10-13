@@ -1,67 +1,43 @@
 import HStack from "../HStack/HStack"
-import { Typography } from "@mui/material"
+import Typography from "../Typography/Typograpy"
 
 const Line9 = () => {
   return (
     <HStack>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#6f7680"
-        pr="132px"
-        pl="12px"
-      >
-        {`9`}
-      </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" pl={60} noWrap>
         {`<`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#72C3AD"
-        pr="12px"
-      >
+      <Typography variant="body-r" color="green-bold" pr={8} noWrap>
         {`Education`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B0DBFC">
+      <Typography variant="body-r" color="sky" noWrap>
         {`major`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#D3D3D3">
-        {`=`}
+      <Typography variant="body-r" color="white-light" noWrap>
+        =
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`{`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#B28972"
-        whiteSpace={"nowrap"}
-      >
+      <Typography variant="body-r" color="brown" noWrap>
         {`"컴퓨터공학전공"`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`}`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#D3D3D3"
-        whiteSpace={"nowrap"}
-      >
+      <Typography variant="body-r" color="white-light" noWrap>
         {`동국대학교(서울)`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`</`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#72C3AD">
+      <Typography variant="body-r" color="green-bold" noWrap>
         {`Education`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
     </HStack>

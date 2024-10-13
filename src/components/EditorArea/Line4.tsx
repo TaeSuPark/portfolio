@@ -1,27 +1,13 @@
 import HStack from "../HStack/HStack"
-import { Typography } from "@mui/material"
+import Typography from "../Typography/Typograpy"
 
 const Line4 = () => {
   return (
     <HStack>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#6f7680"
-        pr="76px"
-        pl="12px"
-      >
-        {`4`}
-      </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#B484BC"
-        pr="12px"
-      >
+      <Typography variant="body-r" color="purple" pl={20} pr={8} noWrap>
         {`return`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B484BC">
+      <Typography variant="body-r" color="purple" noWrap>
         {`(`}
       </Typography>
     </HStack>

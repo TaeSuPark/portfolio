@@ -1,108 +1,46 @@
-import Card from "../Card/Card"
-import HStack from "../HStack/HStack"
-import Line from "../Line/Line"
-import Typography from "../Typography/Typograpy"
+import MarkdownLine from "../MarkdownLine/MarkdownLine"
 import VStack from "../VStack/VStack"
-
-import Img4_1 from "/public/serv/img_4_1.svg"
-import Img4_2 from "/public/serv/img_4_2.svg"
-import Img4_3 from "/public/serv/img_4_3.svg"
-import Img4_4 from "/public/serv/img_4_4.svg"
-import Img4_5 from "/public/serv/img_4_5.svg"
 
 const Project04 = () => {
   return (
-    <VStack p="20px 12px" gap={24}>
-      <VStack gap={24}>
-        <Card>
-          <VStack gap={16}>
-            <Typography variant="subtitle-m" color="white-light">
-              WORKS
-            </Typography>
-            <VStack gap={32}>
-              <HStack gap={16}>
-                <VStack>
-                  <Img4_1 />
-                </VStack>
-                <VStack gap={4}>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`하나은행`}
-                  </Typography>
-                  <Typography variant="body-r" color="white-light">
-                    {`2021.07 - 2021.09`}
-                  </Typography>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`추천부동산, 등기변동알림서비스 제휴`}
-                  </Typography>
-                </VStack>
-              </HStack>
-              <HStack gap={16}>
-                <VStack>
-                  <Img4_2 />
-                </VStack>
-                <VStack gap={4}>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`경남은행`}
-                  </Typography>
-                  <Typography variant="body-r" color="white-light">
-                    {`2022.03 - 2022.05`}
-                  </Typography>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`추천부동산, 등기변동알림서비스 제휴(+자산관리 추가 제휴)`}
-                  </Typography>
-                </VStack>
-              </HStack>
-              <HStack gap={16}>
-                <VStack>
-                  <Img4_3 />
-                </VStack>
-                <VStack gap={4}>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`부산은행`}
-                  </Typography>
-                  <Typography variant="body-r" color="white-light">
-                    {`2022.06 - 2022.08`}
-                  </Typography>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`추천부동산, 등기변동알림서비스 제휴`}
-                  </Typography>
-                </VStack>
-              </HStack>
-              <HStack gap={16}>
-                <VStack>
-                  <Img4_4 />
-                </VStack>
-                <VStack gap={4}>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`KBSTAR`}
-                  </Typography>
-                  <Typography variant="body-r" color="white-light">
-                    {`2023.03 - 2023.05`}
-                  </Typography>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`등기변동알림 서비스 제휴(+기업용 KBSTAR 추가 제휴)`}
-                  </Typography>
-                </VStack>
-              </HStack>
-              <HStack gap={16}>
-                <VStack>
-                  <Img4_5 />
-                </VStack>
-                <VStack gap={4}>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`KB부동산`}
-                  </Typography>
-                  <Typography variant="body-r" color="white-light">
-                    {`2023.06 - 2023.09`}
-                  </Typography>
-                  <Typography variant="subtitle-r" color="white-light">
-                    {`전세지키미(보증금안전진단) 서비스 제휴`}
-                  </Typography>
-                </VStack>
-              </HStack>
-            </VStack>
-          </VStack>
-        </Card>
+    <VStack p="20px 12px">
+      <VStack gap={8}>
+        <MarkdownLine lineIdx={1} value="WORKS" state="title" />
+        <MarkdownLine lineIdx={2} value="" />
+        <MarkdownLine lineIdx={3} value="하나은행" state="subtitle" />
+        <MarkdownLine lineIdx={4} value="2021.07 - 2021.09" />
+        <MarkdownLine
+          lineIdx={5}
+          value="- 추천 부동산, 등기변동알림 서비스 제휴"
+        />
+        <MarkdownLine lineIdx={6} value="" />
+        <MarkdownLine lineIdx={7} value="경남은행" state="subtitle" />
+        <MarkdownLine lineIdx={8} value="2022.03 - 2022.05" />
+        <MarkdownLine
+          lineIdx={9}
+          value="- 추천 부동산, 등기변동알림 서비스 제휴(+자산관리 추가 제휴)"
+        />
+        <MarkdownLine lineIdx={10} value="" />
+        <MarkdownLine lineIdx={11} value="부산은행" state="subtitle" />
+        <MarkdownLine lineIdx={12} value="2022.06 - 2022.08" />
+        <MarkdownLine
+          lineIdx={13}
+          value="- 추천 부동산, 등기변동알림 서비스 제휴"
+        />
+        <MarkdownLine lineIdx={14} value="" />
+        <MarkdownLine lineIdx={15} value="KBSTAR" state="subtitle" />
+        <MarkdownLine lineIdx={16} value="2023.03 - 2023.05" />
+        <MarkdownLine
+          lineIdx={17}
+          value="- 등기변동알림 서비스 제휴(+기업용 KBSTAR 추가 제휴)"
+        />
+        <MarkdownLine lineIdx={18} value="" />
+        <MarkdownLine lineIdx={19} value="KB부동산" state="subtitle" />
+        <MarkdownLine lineIdx={20} value="2023.06 - 2023.09" />
+        <MarkdownLine
+          lineIdx={21}
+          value="- 전세지키미(보증금안전진단) 서비스 제휴"
+        />
       </VStack>
     </VStack>
   )
