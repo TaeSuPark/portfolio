@@ -8,6 +8,7 @@ interface TypographyProps {
   underLine?: boolean
   italic?: boolean
   pl?: SpaceType
+  pr?: SpaceType
   ellipsis?: boolean
   noWrap?: boolean
   children: React.ReactNode
@@ -20,6 +21,7 @@ const Typography = ({
   underLine,
   italic,
   pl,
+  pr,
   ellipsis,
   noWrap,
   children,
@@ -32,6 +34,7 @@ const Typography = ({
       $underLine={underLine}
       $italic={italic}
       pl={pl}
+      pr={pr}
       ellipsis={ellipsis}
       noWrap={noWrap}
     >

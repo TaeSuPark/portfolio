@@ -1,62 +1,43 @@
 import HStack from "../HStack/HStack"
-import { Typography } from "@mui/material"
+import Typography from "../Typography/Typograpy"
 
 const Line6 = () => {
   return (
     <HStack>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#6f7680"
-        pr="132px"
-        pl="12px"
-      >
-        {`6`}
-      </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" pl={60} noWrap>
         {`<`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#72C3AD"
-        pr="12px"
-      >
-        {`HostName`}
+      <Typography variant="body-r" color="green-bold" pr={8} noWrap>
+        HostName
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B0DBFC">
-        {` birth`}
+      <Typography variant="body-r" color="sky" noWrap>
+        birth
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#D3D3D3">
-        {`=`}
+      <Typography variant="body-r" color="white-light" noWrap>
+        =
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`{`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B28972">
-        {`"95.01.29"`}
+      <Typography variant="body-r" color="brown" noWrap>
+        {`95.01.29`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`}`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#D3D3D3"
-        whiteSpace={"nowrap"}
-      >
-        {`박태수`}
+      <Typography variant="body-r" color="white-light" noWrap>
+        박태수
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`</`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#72C3AD">
-        {`HostName`}
+      <Typography variant="body-r" color="green-bold" noWrap>
+        HostName
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
     </HStack>
