@@ -1,61 +1,43 @@
 import HStack from "../HStack/HStack"
-import { Typography } from "@mui/material"
+import Typography from "../Typography/Typograpy"
 
 const Line10 = () => {
   return (
     <HStack>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#6f7680"
-        pr="132px"
-      >
-        {`10`}
-      </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" pl={60} noWrap>
         {`<`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#72C3AD"
-        pr="12px"
-      >
+      <Typography variant="body-r" color="green-bold" pr={8} noWrap>
         {`Certificate`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B0DBFC">
-        {` when`}
+      <Typography variant="body-r" color="sky" noWrap>
+        {`when`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#D3D3D3">
-        {`=`}
+      <Typography variant="body-r" color="white-light" noWrap>
+        =
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`{`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#B28972">
+      <Typography variant="body-r" color="brown" noWrap>
         {`"22.06.17"`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#5A9AF4">
+      <Typography variant="body-r" color="blue-main" noWrap>
         {`}`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#D3D3D3"
-        whiteSpace={"nowrap"}
-      >
+      <Typography variant="body-r" color="white-light" noWrap>
         {`정보처리기사`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`</`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#72C3AD">
+      <Typography variant="body-r" color="green-bold" noWrap>
         {`Certificate`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
     </HStack>

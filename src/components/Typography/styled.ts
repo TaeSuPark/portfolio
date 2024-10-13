@@ -11,6 +11,7 @@ interface TypographyProps {
   ellipsis?: boolean
   noWrap?: boolean
   pl?: number
+  pr?: number
 }
 
 export const Span = styled.span<TypographyProps>`
@@ -19,8 +20,15 @@ export const Span = styled.span<TypographyProps>`
   font-size: ${({ $variant }) => mainTheme.variants[$variant].size};
   color: ${({ $color }) => mainTheme.colors[$color]};
   text-decoration: ${({ $underLine }) => ($underLine ? "underline" : "none")};
+  text-underline-position: under;
   font-style: ${({ $italic }) => ($italic ? "italic" : "normal")};
   padding-left: ${({ pl }) => pl}px;
+  padding-right: ${({ pr }) => pr}px;
   white-space: ${({ noWrap }) => (noWrap ? "nowrap" : "normal")};
   overflow: ${({ ellipsis }) => (ellipsis ? "hidden" : "visible")};
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `

@@ -1,42 +1,28 @@
 import HStack from "../HStack/HStack"
-import { Typography } from "@mui/material"
+import Typography from "../Typography/Typograpy"
 
 const Line7 = () => {
   return (
     <HStack>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#6f7680"
-        pr="132px"
-        pl="12px"
-      >
-        {`7`}
-      </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" pl={60} noWrap>
         {`<`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#72C3AD">
-        {`Tel`}
+      <Typography variant="body-r" color="green-bold" noWrap>
+        Tel
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6f7680">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
-      <Typography
-        variant="h6"
-        style={{ fontWeight: 400 }}
-        color="#D3D3D3"
-        whiteSpace={"nowrap"}
-      >
+      <Typography variant="body-r" color="white-light" noWrap>
         {`010-4109-9841`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`</`}
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#72C3AD">
-        {`Tel`}
+      <Typography variant="body-r" color="green-bold" noWrap>
+        Tel
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: 400 }} color="#6D6D6D">
+      <Typography variant="body-r" color="grey-hide" noWrap>
         {`>`}
       </Typography>
     </HStack>

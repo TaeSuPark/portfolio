@@ -12,7 +12,7 @@ const Modal = ({ children, isOpen, onClose }: Props) => {
   return (
     <ModalConatiner $isOpen={isOpen}>
       <ModalContentContainer>
-        <VStack>
+        <VStack gap={16}>
           <HStack justifyContent="flex-end">
             <div style={{ cursor: "pointer" }}>
               <IcClose onClick={onClose} />
