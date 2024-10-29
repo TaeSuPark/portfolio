@@ -33,7 +33,7 @@ const EditorView = () => {
 
   return (
     <VStack bg={"primary"} height="100vh">
-      <HStack flexGrow={1}>
+      <HStack flexGrow={1} overflowY="hidden">
         {/** Menu Tab */}
         <VStack width="max-content">
           <Tab
