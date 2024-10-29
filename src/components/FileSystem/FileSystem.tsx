@@ -32,7 +32,7 @@ const FileSystem = ({}: FileSystemProps) => {
     if (!tab.find((file) => file.value === key)) {
       if (fileName.includes(".ts") || fileName.includes(".tsx")) {
         setTab([...tab, { label: fileName, value: key, svg: <IcReactSmall /> }])
-      } else if (fileName.includes(".pjt") || fileName.includes(".wrk")) {
+      } else if (fileName.includes("") || fileName.includes("")) {
         setTab([...tab, { label: fileName, value: key, svg: <IcProject /> }])
       }
     }
@@ -139,53 +139,50 @@ const FileSystem = ({}: FileSystemProps) => {
                   >
                     <SvgTypo
                       svg={<IcProject />}
-                      value="부동산_공적장부_플랫폼_독큐_개발.pjt"
+                      value="부동산_공적장부_플랫폼_독큐_개발"
                       color="green-main"
                       p="6px 0px 6px 64px"
                       onClick={() => {
                         handleTab(
-                          "부동산_공적장부_플랫폼_독큐_개발.pjt",
+                          "부동산_공적장부_플랫폼_독큐_개발",
                           "Project01"
                         )
                       }}
                     />
                     <SvgTypo
                       svg={<IcProject />}
-                      value="홈큐_자산관리_서비스_개발.pjt"
+                      value="홈큐_자산관리_서비스_개발"
                       color="green-main"
                       p="6px 0px 6px 64px"
                       onClick={() => {
-                        handleTab("홈큐_자산관리_서비스_개발.pjt", "Project02")
+                        handleTab("홈큐_자산관리_서비스_개발", "Project02")
                       }}
                     />
                     <SvgTypo
                       svg={<IcProject />}
-                      value="홈큐_전세지키미_서비스_개발.pjt"
+                      value="홈큐_전세지키미_서비스_개발"
                       color="green-main"
                       p="6px 0px 6px 64px"
                       onClick={() => {
-                        handleTab(
-                          "홈큐_전세지키미_서비스_개발.pjt",
-                          "Project03"
-                        )
+                        handleTab("홈큐_전세지키미_서비스_개발", "Project03")
                       }}
                     />
                     <SvgTypo
                       svg={<IcProject />}
-                      value="은행사_서비스_제휴_업무.pjt"
+                      value="은행사_서비스_제휴_업무"
                       color="green-main"
                       p="6px 0px 6px 64px"
                       onClick={() => {
-                        handleTab("은행사_서비스_제휴_업무.pjt", "Project04")
+                        handleTab("은행사_서비스_제휴_업무", "Project04")
                       }}
                     />
                     <SvgTypo
                       svg={<IcProject />}
-                      value="기타_업무.wrk"
+                      value="기타_업무"
                       color="green-main"
                       p="6px 0px 6px 64px"
                       onClick={() => {
-                        handleTab("기타_업무.wrk", "Project05")
+                        handleTab("기타_업무", "Project05")
                       }}
                     />
                   </AnimateHeight>
