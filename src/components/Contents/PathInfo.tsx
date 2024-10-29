@@ -76,7 +76,7 @@ const PathInfo = () => {
             <HStack gap={8}>
               <IcProject />
               <Typography variant="body-r" color="white-light" noWrap>
-                부동산_공적장부_플랫폼_독큐_개발.pjt
+                부동산_공적장부_플랫폼_독큐_개발
               </Typography>
             </HStack>
           </>
@@ -93,7 +93,7 @@ const PathInfo = () => {
             <HStack gap={8}>
               <IcProject />
               <Typography variant="body-r" color="white-light" noWrap>
-                홈큐_자산관리_서비스_개발.pjt
+                홈큐_자산관리_서비스_개발
               </Typography>
             </HStack>
           </>
@@ -110,7 +110,7 @@ const PathInfo = () => {
             <HStack gap={8}>
               <IcProject />
               <Typography variant="body-r" color="white-light" noWrap>
-                홈큐_전세지키미_서비스_개발.pjt
+                홈큐_전세지키미_서비스_개발
               </Typography>
             </HStack>
           </>
@@ -127,7 +127,7 @@ const PathInfo = () => {
             <HStack gap={8}>
               <IcProject />
               <Typography variant="body-r" color="white-light" noWrap>
-                은행사_서비스_제휴_업무.pjt
+                은행사_서비스_제휴_업무
               </Typography>
             </HStack>
           </>
@@ -144,7 +144,7 @@ const PathInfo = () => {
             <HStack gap={8}>
               <IcProject />
               <Typography variant="body-r" color="white-light">
-                기타_업무.wrk
+                기타_업무
               </Typography>
             </HStack>
           </>
